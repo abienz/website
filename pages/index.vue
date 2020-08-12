@@ -2,51 +2,9 @@
   <div>
     <home-welcome />
     <home-features id="features" class="mt-10" />
-    <div class="wrapper">
+    <home-team id="team" class="mt-10" />
+    <div class="wrapper mt-10">
       <main>
-        <section id="team" class="team">
-          <h2 class="container mx-auto">Team</h2>
-
-          <p>
-            Akira exists thanks to the contribution of hundreds of developers
-            and designers, but the four guys that started all of this need a bit
-            of a shout out.
-          </p>
-
-          <ul>
-            <li>
-              <img
-                src="~/assets/img/avatar-albertoFanjul.png"
-                alt="Alberto Fanjul photo"
-              />
-              <h3>Alberto Funjul</h3>
-            </li>
-            <li>
-              <img
-                src="~/assets/img/avatar-alessandroCastellani.png"
-                alt="Alessandro Castellani photo"
-              />
-              <h3>Alessandro Castellani</h3>
-            </li>
-            <li>
-              <img
-                src="~/assets/img/avatar-bilalElmoussaoui.png"
-                alt="Bilal Elmoussaoui photo"
-              />
-              <h3>Bilal Elmoussaoui</h3>
-            </li>
-            <li>
-              <img
-                src="~/assets/img/avatar-felipeEscoto.png"
-                alt="Felipe Escoto photo"
-              />
-              <h3>Felipe Escoto</h3>
-            </li>
-          </ul>
-
-          <a href="team" class="cta">Contributors</a>
-        </section>
-
         <section id="support" class="support">
           <h2>Support us</h2>
 
@@ -143,9 +101,10 @@
 import Logo from '~/components/Logo.vue'
 import HomeWelcome from '~/components/partials/home/HomeWelcome'
 import HomeFeatures from '~/components/partials/home/HomeFeatures'
+import HomeTeam from '~/components/partials/home/HomeTeam'
 
 export default {
-  components: { Logo, HomeWelcome, HomeFeatures }
+  components: { Logo, HomeWelcome, HomeFeatures, HomeTeam }
 }
 </script>
 
