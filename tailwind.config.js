@@ -3,11 +3,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Open Sans', ...defaultTheme.fontFamily.sans]
-      },
-      backgroundColor: {
-
-      },
+        sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
+        'sans-condensed': [
+          'Open Sans Condensed',
+          ...defaultTheme.fontFamily.sans
+        ]
+      }
     }
   },
   plugins: [

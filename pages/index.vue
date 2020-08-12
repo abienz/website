@@ -1,209 +1,151 @@
 <template>
-  <div class="wrapper">
+  <div>
     <home-welcome />
+    <home-features id="features" class="mt-10" />
+    <div class="wrapper">
+      <main>
+        <section id="team" class="team">
+          <h2 class="container mx-auto">Team</h2>
 
-    <main>
-      <section id="features" class="features">
-        <h2>Features</h2>
+          <p>
+            Akira exists thanks to the contribution of hundreds of developers
+            and designers, but the four guys that started all of this need a bit
+            of a shout out.
+          </p>
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod
-          tempor incididunt ut labore et dolore magnaaliqua.
-        </p>
-
-        <ul>
-          <li>
-            <img src="~/assets/img/icon-linux.png" alt="Linux icon" />
-            <h3>Native for linux</h3>
-            <p>
-              Akira is built in Vala and GTK, no electron shenanigans here, and
-              specially crafted to run on Linux.
-            </p>
-          </li>
-          <li>
-            <img src="~/assets/img/icon-svg.png" alt="SVG icon" />
-            <h3>SVG-Based Canvas</h3>
-            <p>
-              Akira is powered by GooCanvas, a native SVG-based canvas Library
-              maintained by GNOME.
-            </p>
-          </li>
-          <li>
-            <img src="~/assets/img/icon-shapes.png" alt="Shapes icon" />
-            <h3>Non-Destructive Editing</h3>
-            <p>
-              All the native shapes and elements are vector, giving you the
-              ability to use boolean operations without ever loosing the
-              original shape.
-            </p>
-          </li>
-          <li>
-            <img src="~/assets/img/icon-guides.png" alt="Guides icon" />
-            <h3>Pixel Precision</h3>
-            <p>
-              An always crip and grid-hinted design thanks to the built-in pixel
-              grid, rulers, and guidelines. Becuase you know, sub-pixels are not
-              a thing.
-            </p>
-          </li>
-          <li>
-            <img src="~/assets/img/icon-branches.png" alt="Git branches icon" />
-            <h3>Built-in Version Control</h3>
-            <p>
-              Never lose your work again with the Akira file format and its
-              built-in local Git repository
-            </p>
-          </li>
-          <li>
-            <img src="~/assets/img/icon-wireframe.png" alt="Wireframe icon" />
-            <h3>Intuitive interface</h3>
-            <p>
-              No need to get lost in hundreds of menus or dropdowns, watch the
-              interface follow your actions and boost your productivity.
-            </p>
-          </li>
-        </ul>
-
-        <a href="features" class="cta">Learn more</a>
-      </section>
-
-      <section id="team" class="team">
-        <h2 class="container mx-auto">Team</h2>
-
-        <p>
-          Akira exists thanks to the contribution of hundreds of developers and
-          designers, but the four guys that started all of this need a bit of a
-          shout out.
-        </p>
-
-        <ul>
-          <li>
-            <img
-              src="~/assets/img/avatar-albertoFanjul.png"
-              alt="Alberto Fanjul photo"
-            />
-            <h3>Alberto Funjul</h3>
-          </li>
-          <li>
-            <img
-              src="~/assets/img/avatar-alessandroCastellani.png"
-              alt="Alessandro Castellani photo"
-            />
-            <h3>Alessandro Castellani</h3>
-          </li>
-          <li>
-            <img
-              src="~/assets/img/avatar-bilalElmoussaoui.png"
-              alt="Bilal Elmoussaoui photo"
-            />
-            <h3>Bilal Elmoussaoui</h3>
-          </li>
-          <li>
-            <img
-              src="~/assets/img/avatar-felipeEscoto.png"
-              alt="Felipe Escoto photo"
-            />
-            <h3>Felipe Escoto</h3>
-          </li>
-        </ul>
-
-        <a href="team" class="cta">Contributors</a>
-      </section>
-
-      <section id="support" class="support">
-        <h2>Support us</h2>
-
-        <p>
-          Akira is a Free and Open Source Project that aims at offering a
-          professional and native Linux alternative to proprietary UX Design
-          apps. Akira is made possible by the work of talented developers, help
-          us to keep this project alive.
-        </p>
-
-        <a
-          href="https://www.patreon.com/akiraux/posts"
-          class="cta"
-          target="_blank"
-          title="Akira UX at Patreon"
-        >
-          Patreon
-        </a>
-        <a
-          href="https://liberapay.com/AkiraUX/"
-          class="cta"
-          target="_blank"
-          title="Akira UX at Liberapay"
-        >
-          Liberapay
-        </a>
-      </section>
-    </main>
-
-    <footer>
-      <div>
-        <h2>
-          <Logo />
-          Akira
-        </h2>
-
-        <nav>
           <ul>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="roadmap">Roadmap</a></li>
-            <li><a href="changelog">Changelog</a></li>
-          </ul>
-        </nav>
-
-        <p>
-          Akira is a Free and Open Source Software under GPLv3 License,
-          including all its assets, templates and this very own website. Sharing
-          is caring.
-        </p>
-
-        <ul class="social">
-          <li>
-            <a
-              href="https://github.com/akiraux"
-              target="_blank"
-              title="Akira UX at Github"
-            >
-              <img src="~/assets/img/glyph-github.svg" alt="Link to Github" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://fosstodon.org/@akiraux"
-              target="_blank"
-              title="Akira UX at Mastadon"
-            >
+            <li>
               <img
-                src="~/assets/img/glyph-mastadon.svg"
-                alt="Link to Mastadon"
+                src="~/assets/img/avatar-albertoFanjul.png"
+                alt="Alberto Fanjul photo"
               />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://twitter.com/akiraux"
-              target="_blank"
-              title="Akira UX at Twitter"
-            >
-              <img src="~/assets/img/glyph-twitter.svg" alt="Link to Twitter" />
-            </a>
-          </li>
-        </ul>
-      </div>
-    </footer>
+              <h3>Alberto Funjul</h3>
+            </li>
+            <li>
+              <img
+                src="~/assets/img/avatar-alessandroCastellani.png"
+                alt="Alessandro Castellani photo"
+              />
+              <h3>Alessandro Castellani</h3>
+            </li>
+            <li>
+              <img
+                src="~/assets/img/avatar-bilalElmoussaoui.png"
+                alt="Bilal Elmoussaoui photo"
+              />
+              <h3>Bilal Elmoussaoui</h3>
+            </li>
+            <li>
+              <img
+                src="~/assets/img/avatar-felipeEscoto.png"
+                alt="Felipe Escoto photo"
+              />
+              <h3>Felipe Escoto</h3>
+            </li>
+          </ul>
+
+          <a href="team" class="cta">Contributors</a>
+        </section>
+
+        <section id="support" class="support">
+          <h2>Support us</h2>
+
+          <p>
+            Akira is a Free and Open Source Project that aims at offering a
+            professional and native Linux alternative to proprietary UX Design
+            apps. Akira is made possible by the work of talented developers,
+            help us to keep this project alive.
+          </p>
+
+          <a
+            href="https://www.patreon.com/akiraux/posts"
+            class="cta"
+            target="_blank"
+            title="Akira UX at Patreon"
+          >
+            Patreon
+          </a>
+          <a
+            href="https://liberapay.com/AkiraUX/"
+            class="cta"
+            target="_blank"
+            title="Akira UX at Liberapay"
+          >
+            Liberapay
+          </a>
+        </section>
+      </main>
+
+      <footer>
+        <div>
+          <h2>
+            <Logo />
+            Akira
+          </h2>
+
+          <nav>
+            <ul>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="roadmap">Roadmap</a></li>
+              <li><a href="changelog">Changelog</a></li>
+            </ul>
+          </nav>
+
+          <p>
+            Akira is a Free and Open Source Software under GPLv3 License,
+            including all its assets, templates and this very own website.
+            Sharing is caring.
+          </p>
+
+          <ul class="social">
+            <li>
+              <a
+                href="https://github.com/akiraux"
+                target="_blank"
+                title="Akira UX at Github"
+              >
+                <img src="~/assets/img/glyph-github.svg" alt="Link to Github" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://fosstodon.org/@akiraux"
+                target="_blank"
+                title="Akira UX at Mastadon"
+              >
+                <img
+                  src="~/assets/img/glyph-mastadon.svg"
+                  alt="Link to Mastadon"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/akiraux"
+                target="_blank"
+                title="Akira UX at Twitter"
+              >
+                <img
+                  src="~/assets/img/glyph-twitter.svg"
+                  alt="Link to Twitter"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
   </div>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
 import HomeWelcome from '~/components/partials/home/HomeWelcome'
+import HomeFeatures from '~/components/partials/home/HomeFeatures'
 
 export default {
-  components: { Logo, HomeWelcome }
+  components: { Logo, HomeWelcome, HomeFeatures }
 }
 </script>
 
