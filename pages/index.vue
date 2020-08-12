@@ -1,98 +1,6 @@
 <template>
   <div class="wrapper">
-    <header>
-      <div>
-        <logo />
-        <nav>
-          <ul>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="roadmap">Roadmap</a></li>
-            <li><a href="changelog">Changelog</a></li>
-            <li class="cta"><a href="donate">Donate</a></li>
-          </ul>
-
-          <ul class="social">
-            <li>
-              <a
-                href="https://github.com/akiraux"
-                target="_blank"
-                title="Akira UX at Github"
-              >
-                <img src="~/assets/img/glyph-github.svg" alt="Link to Github" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://fosstodon.org/@akiraux"
-                target="_blank"
-                title="Akira UX at Mastadon"
-              >
-                <img
-                  src="~/assets/img/glyph-mastadon.svg"
-                  alt="Link to Mastadon"
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/akiraux"
-                target="_blank"
-                title="Akira UX at Twitter"
-              >
-                <img
-                  src="~/assets/img/glyph-twitter.svg"
-                  alt="Link to Twitter"
-                />
-              </a>
-            </li>
-          </ul>
-        </nav>
-
-        <h1>Akira</h1>
-        <p class="subtitle">The Linux design tool</p>
-        <img
-          class="akiraTeen"
-          src="~/assets/img/akira-teen.png"
-          alt="Akira Teen mascot"
-        />
-
-        <p>
-          Akira is a native Linux design application built in Vala and GTK.
-          Akira focusses on offering a modern and fast approach to UI and UX
-          design, mainly targetting web designers and graphic designers. The
-          main goal is to offer a valid and professional solution for designers
-          who want to use Linux as their main OS.
-        </p>
-
-        <ul class="downloads">
-          <li>
-            <a href="#">
-              <img
-                src="~/assets/img/downloads-app.png"
-                alt="Get it on appcenter"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img
-                src="~/assets/img/downloads-flat.png"
-                alt="Download on flathub"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img
-                src="~/assets/img/downloads-snap.png"
-                alt="Download on snapcraft"
-              />
-            </a>
-          </li>
-        </ul>
-      </div>
-    </header>
+    <home-welcome />
 
     <main>
       <section id="features" class="features">
@@ -292,15 +200,14 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
+import HomeWelcome from '~/components/partials/home/HomeWelcome'
 
 export default {
-  components: {
-    Logo
-  }
+  components: { Logo, HomeWelcome }
 }
 </script>
 
-<style>
+<style scoped>
 body {
   font: 14px/1.5 'Open Sans', 'sans-serif';
 }
