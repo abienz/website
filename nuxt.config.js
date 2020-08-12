@@ -13,8 +13,13 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300' }
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300'
+      }
     ]
   },
 
@@ -22,17 +27,10 @@ export default {
    ** Customize the progress-bar color
    */
   loading: { color: '#fff' },
-
-  /*
-   ** Global CSS
-   */
-  css: ['~/assets/css/tailwind.css'],
-
   /*
    ** Plugins to load before mounting the App
    */
   plugins: [],
-
   /*
    ** Nuxt.js modules
    */
@@ -40,6 +38,13 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa'
+  ],
+  /*
+   **
+   */
+  buildModules: [
+    // Doc: https://tailwindcss.nuxtjs.org/setup
+    '@nuxtjs/tailwindcss'
   ],
   /*
    ** Axios module configuration
