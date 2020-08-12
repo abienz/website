@@ -3,35 +3,10 @@
     <home-welcome />
     <home-features id="features" class="mt-10" />
     <home-team id="team" class="mt-10" />
+    <home-support id="support" class="nt-10" />
     <div class="wrapper mt-10">
       <main>
-        <section id="support" class="support">
-          <h2>Support us</h2>
-
-          <p>
-            Akira is a Free and Open Source Project that aims at offering a
-            professional and native Linux alternative to proprietary UX Design
-            apps. Akira is made possible by the work of talented developers,
-            help us to keep this project alive.
-          </p>
-
-          <a
-            href="https://www.patreon.com/akiraux/posts"
-            class="cta"
-            target="_blank"
-            title="Akira UX at Patreon"
-          >
-            Patreon
-          </a>
-          <a
-            href="https://liberapay.com/AkiraUX/"
-            class="cta"
-            target="_blank"
-            title="Akira UX at Liberapay"
-          >
-            Liberapay
-          </a>
-        </section>
+        <section class="support"></section>
       </main>
 
       <footer>
@@ -102,9 +77,10 @@ import Logo from '~/components/Logo.vue'
 import HomeWelcome from '~/components/partials/home/HomeWelcome'
 import HomeFeatures from '~/components/partials/home/HomeFeatures'
 import HomeTeam from '~/components/partials/home/HomeTeam'
+import HomeSupport from '~/components/partials/home/HomeSupport'
 
 export default {
-  components: { Logo, HomeWelcome, HomeFeatures, HomeTeam }
+  components: { Logo, HomeWelcome, HomeFeatures, HomeTeam, HomeSupport }
 }
 </script>
 
