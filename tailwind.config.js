@@ -1,9 +1,11 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
+const uiColors = require('@tailwindcss/ui/colors')
 module.exports = {
   theme: {
     extend: {
       colors: {
         gray: {
+          ...uiColors.gray,
           100: '#f5f5f5'
         }
       },

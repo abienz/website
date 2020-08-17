@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <div class="h-48 clip-top bg-gray-100"></div>
+  <clipped-section inner-class="bg-gray-100">
     <div class="bg-gray-100">
       <div class="container mx-auto">
         <h2 class="text-center text-6xl">Team</h2>
@@ -41,11 +40,12 @@
         </div>
       </div>
     </div>
-    <div class="h-48 clip-bottom bg-gray-100"></div>
-  </div>
+  </clipped-section>
 </template>
 <script>
+import ClippedSection from '@/components/common/ClippedSection'
 export default {
+  components: { ClippedSection },
   computed: {
     team() {
       const team = []
@@ -70,14 +70,3 @@ export default {
   }
 }
 </script>
-<style lang="css" scoped>
-@responsive {
-  .clip-bottom {
-    clip-path: polygon(100% 0, 0 0, 0% 100%);
-  }
-
-  .clip-top {
-    clip-path: polygon(50% 50%, 100% 100%, 100% 100%, 0 100%, 0 0);
-  }
-}
-</style>
